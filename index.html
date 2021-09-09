@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kagami Academy ~ Iterative Dutch Auction</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+    <meta name="title" content="Kagami Academy ~ Iterative Dutch Auction" />
+    <meta name="keyword" content="Kagami Academy, Iterative Dutch Auction" />
+    <meta
+      name="description"
+      content="Kagami Academy is a proof-of-concept for the iterative dutch auction."
+    />
+    <link rel="icon" href="favicon.ico" type="image/icon type" />
+
+    <meta property="og:title" content="Kagami Academy ~ Iterative Dutch Auction" />
+    <meta
+      property="og:description"
+      content="Kagami Academy is a proof-of-concept for the iterative dutch auction."
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.kagami.academy" />
+    <meta property="article:section" content="article" />
+    <meta property="article:published_time" content="2021-08-09T00:00:00+00:00" />
+    <meta property="article:modified_time" content="2021-08-09T00:00:00+00:00" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://www.kagami.academy/banner.png" />
+    <meta name="twitter:title" content="Kagami Academy ~ Iterative Dutch Auction" />
+    <meta name="twitter:site" content="Kagami_Academy" />
+    <meta
+      name="twitter:description"
+      content="Kagami Academy is a proof-of-concept for the iterative dutch auction."
+    />
+    <meta property="og:image" content="https://www.kagami.academy/banner.png" />
+  </head>
+
+  <body>
+    <div class="mascot">
+      <div class="logo" style="margin: 1em">
+        <a href="">
+          <img src="banner.png" style="border: 2px solid gray; max-width: 500px; padding: 0em"
+        /></a>
+      </div>
+    </div>
+
+    <div class="m_box">
+      <div class="m_box_bar">
+        <h2>Welcome to Kagami Academy!</h2>
+      </div>
+
+      <p>
+        Kagami's are generated on-chain in a random distribution of various rarities.
+        1024 Kagami's will be sold, with the previous Kagami revealed after each dutch auction concludes, 
+        and the next one placed for sale immediately following the iterative dutch formula.
+      </p>
+    </div>
+
+    <hr />
+    <hr />
+    <p style="text-align: center">
+      <a href=""></a> |
+      <a href="" target="blank"></a>
+    </p>
+
+    <div class="box">
+      <div class="box_bar">
+        <h2>Iterative Dutch Auction</h2>
+      </div>
+
+      <p>
+The iterative dutch auction is introduced to allow accurate price discovery to be achieved in sales of iterative series of like items:</p>
+<ul><li> Dutch auction, lowering in price every X blocks reaching half life every Y blocks; e.g. lowering in price every 30 seconds, reaching half-life every 5 minutes.</li>
+<li>On sale, new item listed immediately starting at 150% of previous' sale price.</li>
+</ul>
+
+<p>
+This new minting model proposes to solve issues of fair entry both in price discovery and in gas congestion for iterative NFT series, 
+currently inefficiently served by flat price sales and dutch auctions*, self-correcting for inaccurate initial price setting.</p>
+
+</div>
+
+
+<div class="m_box_red"><div class="m_box_bar_red">
+<h2>* Problems Addressed</h2>
+</div>
+	
+<p>The current standard models for a "fair launch" of Generative NFT Series is either a flat sale, or more recently, dutch auctions.</p>
+
+<p>Flat sales have the problem of a rush to mint, which can lead to gas spikes and extremely fast sell-outs. The risk of overpricing leads to an incomplete sale, so projects with extensive attention sell out very quickly and often get immediately listed at a higher "flip", confirming they were underpriced. There is no chance for price discovery to be formed in the sale, but accurate starting price setting is extremely difficult as there is little objective information to employ in the estimate. The incentives lead to setting price lower than estimates.</p>
+<p>
+Dutch auctions for minting are a new trend attempting to combat this lack of price discovery, widely introduced by ArtBlocks whose prestige leads them to suffer from frequent fast mints. A starting mint price is chosen at a price higher than estimated valuation, and then the price to mint trails downwards every X minutes, allowing people to mint the NFT at the price they feel is correct, until all are gone.</p>
+
+<hr>
+
+<p>Some opportunities to make the iterative dutch auction more robust and scalable:<p>
+<ol>
+<li>Price increase scaling - rather than an arbitary 150%, it can scale based on a formula measuring how consistent the price window has been in the last X sales, such that if a stable price is discovered, it doesn't need to increase the next sale as drastically, saving time in the auction</li>
+<li>Minting window - rather than only the first to mint to have their transaction succeed, allow anyone who successful sends a mint transaction within a block of time representing each price point to succeed in the mint. Price will still bump up if there's at least one sale. Can cause complications of starting price is underpriced, though, with everyone running to get in the first block.</p>
+</div>
+
+  </body>
+</html>
