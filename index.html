@@ -107,7 +107,10 @@ currently inefficiently served by flat price sales and dutch auctions*, and self
 <p>Flat sales have the problem of a rush to mint, which can lead to gas spikes and extremely fast sell-outs. The risk of overpricing leads to an incomplete sale, so projects with extensive attention sell out very quickly and often get immediately listed at a higher "flip", confirming they were underpriced. There is no chance for price discovery to be formed in the sale, but accurate starting price setting is extremely difficult as there is little objective information to employ in the estimate. The incentives lead to setting price lower than estimates.</p>
 <p>
 Dutch auctions for minting are a new trend attempting to combat this lack of price discovery, widely introduced by ArtBlocks whose prestige leads them to suffer from frequent fast mints. A starting mint price is chosen at a price higher than estimated valuation, and then the price to mint trails downwards every X minutes, allowing people to mint the NFT at the price they feel is correct, until all are gone.</p>
-
+<p>However, if the starting price is too low, the sale will experience the same rush and fast mint out as a flat price sale, which is something that has frequently happened in ArtBlock's high demand sales. Demand in the NFT market can be extremely difficult to predict even on the same marketplace or releases from the same artist, so overvaluation still relies on low information price setting estimation. The price setter is also disincentivized to start sales off too overvalued due to the public perception of hubris; and the extreme curve at the beginning of the sale, combined with ArtBlock's stepped price adjustment every 5 minutes rather than scaling every few seconds leads to a sudden rush to mint at the reasonable price point even when beginning with the required overvalued price point.
+	</p><p>
+The iterative dutch auction solves these issues and is recommended for accurate price discovery on any iterative series of like items, especially for well-known galleries or highly demanded releases.
+	</p>
 <hr>
 
 <p>Some opportunities to make the iterative dutch auction more robust and scalable:<p>
