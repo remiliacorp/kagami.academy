@@ -4,7 +4,7 @@ body {
     "MS PGothic", farial, helvetica, clean, sans-serif;
   max-width: 43em;
   margin: auto;
-  background-image: linear-gradient(#d9f0d6, #f4ffee, #f4ffee, white, white);
+  background-image: linear-gradient(#ebdaf9, #ffeefd, #f4ffee, white, white);
   background-attachment: fixed;
 }
 
@@ -18,12 +18,12 @@ img:hover {
   border: 1px solid purple;
 }
 .m_box {
-  border: 1px solid #2f4d0c;
+  border: 1px solid #d5b3ea;
   margin: 1em;
   background-color: white;
 }
 .m_box_red {
-  border: 1px solid #800000;
+  border: 1px solid #765bca;
   margin: 1em;
   background-color: #ffffee;
 }
@@ -33,11 +33,11 @@ a {
   text-decoration: underline;
 }
 .m_box_bar {
-  background: #2f4d0c;
+  background: #9d6cbf;
   color: white;
 }
 .m_box_bar_red {
-  background: #800000;
+  background: #7264d6;
   color: white;
 }
 
@@ -54,14 +54,14 @@ p {
 }
 
 .box {
-  border: 1px solid #2f4d0c;
-  color: #2f4d0c;
+  border: 1px solid #a087ab;
+  color: #415a23;
   margin: 1em;
   background-color: white;
 }
 .box_bar {
-  background: #b9d9b7;
-  color: #2f4d0c;
+  background: #e6d4f3;
+  color: #842ea5;
 }
 
 h2 {
